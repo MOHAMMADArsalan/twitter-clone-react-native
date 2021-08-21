@@ -3,11 +3,12 @@ import { StyleSheet } from 'react-native';
 
 import { Text, View } from '../../components/Themed';
 import { Tweet } from "../../components";
+import tweets from "../../data/tweets";
 
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      <Tweet />
+      <Tweet tweet={tweets[0]}/>
     </View>
   );
 }

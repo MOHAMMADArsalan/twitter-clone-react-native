@@ -22,3 +22,21 @@ export type HomeNavigatorParamList = {
 export type TabTwoParamList = {
   TabTwoScreen: undefined;
 };
+
+export type IUser = {
+  username: string;
+  name: string;
+  id: string;
+  image: string;
+}
+export type ITweet = {
+  id: string;
+  user: IUser,
+  content: string;
+  createdAt: string;
+  numberOfComments: number;
+  numberOfRetweets: number
+  numberOfLikes: number;
+  image: string;
+}
+
