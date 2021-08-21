@@ -1,10 +1,16 @@
 import React from "react";
 import { TouchableOpacity } from "react-native"
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { useNavigation }  from "@react-navigation/native";
+
 import styles from "./styles";
 
 const NewTweetButton = () => {
-    const onPress = () => {}
+    const navigation = useNavigation();
+
+    const onPress = () => {
+        navigation.navigate("NewTweet");
+    }
     return (
         <TouchableOpacity 
             activeOpacity={0.8}
