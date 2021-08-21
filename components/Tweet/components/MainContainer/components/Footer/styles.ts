@@ -4,7 +4,8 @@ const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
         width: '100%',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        marginTop: 5
     },
     number: {
         color: 'grey',
